@@ -1,0 +1,8 @@
+link : https://catalog.ngc.nvidia.com/orgs/nvidia/teams/jps/containers/jps-gdino
+
+docker pull nvcr.io/nvidia/jps/jps-gdino:ds7.1-public-12-11-1
+
+docker run -itd -v /home/sastra/Desktop/ObjectProperty/output:/ds_microservices/output --runtime nvidia --network host nvcr.io/nvidia/jps/jps-gdino:ds7.1-public-12-11-1
+
+tensorrt
+export PYTHONPATH=/usr/lib/python3.10/dist-packages:$PYTHONPATH

@@ -1,0 +1,2 @@
+1) To start ollama server
+docker run -d   --runtime nvidia --name ollama-server   -v ~/ollama:/ollama -e OLLAMA_MODELS=/ollama  -p 11434:11434   dustynv/ollama:0.4.0-r36.4.0   ollama serve
